@@ -20,8 +20,11 @@ public Cabaña(int ID, string nombre, string descripcion, int capacidad, List<st
         this.fotos = fotos;
         this.ambientes = ambientes;
 
-    }
 
+
+    }
     
+
+
 
 }
