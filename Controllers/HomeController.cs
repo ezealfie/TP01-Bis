@@ -15,7 +15,16 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        Complejo complejo = new Complejo();
+       Dictionary<int, Cabaña> cabañas = complejo.devolverComplejo();
+       ViewBag.cabañas = cabañas;   
         return View();
+    }
+    public IActionResult selectCabaña(int ID)
+    {
+        Complejo complejo = new Complejo();
+       ViewBag.cabaña = complejo.obtenerCabaña(ID);   
+        return View("infoCabaña");
     }
 
     public IActionResult Privacy()

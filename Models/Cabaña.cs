@@ -1,3 +1,6 @@
+using System.ComponentModel;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+
 namespace TP01bis_ALFIE_FAINSCHTEIN.Models;
 
 public class Cabaña
@@ -23,8 +26,18 @@ public Cabaña(int ID, string nombre, string descripcion, int capacidad, List<st
 
 
     }
-    
+    public string getDescripcion(){return descripcion;}
+    public int getCapacidad(){return capacidad;}
+    public List<string> getFotos(){return fotos;}
+    public List<string> getAmbientes(){return ambientes;}
+public int getID()
+    {
+        return ID;
+    }
 
-
+public string getName()
+    {
+        return nombre;
+    }
 
 }

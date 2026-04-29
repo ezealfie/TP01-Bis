@@ -1,0 +1,8 @@
+<h1>Información @ViewBag.cabaña.getName()</h1>
+<p>ID de la cabaña: @ViewBag.cabaña.getID()</p>
+<h4>@ViewBag.cabaña.getDescripcion()</h4>
+<h3>Su capacidad es de @ViewBag.cabaña.getCapacidad() personas.</h3>
+<h5>Sus ambientes son:</h5>
+@foreach(string ambiente in ViewBag.cabaña.getAmbientes()){
+    <h4>@ambiente</h4>
+}
