@@ -29,3 +29,25 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+main ul li{
+  list-style: none;
+  float:inline-start;
+  border: 2px solid black;
+  padding-left: 10%;
+  border-radius: 10px;
+  box-shadow: 4px 4px 15px black;
+}
+img{
+height: 200px;
+width: 200px;
+}
+
+main h1, h2, h3, h4, p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  
+}
+.fotos {
+  margin-right: 28%;
+  margin-left: 25%;
+}

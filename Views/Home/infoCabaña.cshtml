@@ -6,3 +6,8 @@
 @foreach(string ambiente in ViewBag.cabaña.getAmbientes()){
     <h4>@ambiente</h4>
 }
+<div class="fotos">
+@foreach(string foto in ViewBag.cabaña.getFotos()){
+ <img src="/img/@foto" alt="foto cabaña">
+}
+</div>
